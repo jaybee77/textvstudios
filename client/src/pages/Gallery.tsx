@@ -8,8 +8,8 @@ export default function Gallery() {
       caption: "Recording Session"
     },
     {
-      src: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Mixing Console",
+      src: "/control-room.jpg",
+      alt: "TEXtv Studios Control Room",
       caption: "Control Room"
     },
     {
