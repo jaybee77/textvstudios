@@ -10,22 +10,37 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="bg-black dark:bg-gray-950 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+      <div className="relative bg-black dark:bg-gray-950 text-white overflow-hidden">
+        {/* Background Video */}
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+        >
+          <source src="/bg-video.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Content Overlay */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
               TEXtv Studios
             </h1>
-            <p className="text-xl lg:text-2xl text-gray-300 dark:text-gray-400 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl lg:text-2xl text-gray-200 dark:text-gray-300 mb-8 max-w-3xl mx-auto drop-shadow-md">
               Where Texas Talent Meets World-Class Technology
             </p>
             <Link href="/booking">
-              <Button className="bg-textv-cyan text-black px-8 py-4 text-lg font-semibold hover:bg-textv-cyan/90 transition-colors">
+              <Button className="bg-textv-cyan text-black px-8 py-4 text-lg font-semibold hover:bg-textv-cyan/90 transition-colors drop-shadow-lg">
                 Book a Session
               </Button>
             </Link>
           </div>
         </div>
+        
+        {/* Dark Overlay for Better Text Readability */}
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
       {/* Intro Section */}
       <div className="py-20 bg-gray-50 dark:bg-gray-900">
