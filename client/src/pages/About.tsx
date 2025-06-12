@@ -2,6 +2,8 @@ import { Award, Users, Building, DollarSign } from "lucide-react";
 
 import mision from "@assets/mision.jpg";
 
+import mision2 from "@assets/mision2.jpg";
+
 export default function About() {
   const differentiators = [
     {
@@ -43,7 +45,7 @@ export default function About() {
           </div>
           <div>
             <img 
-              src={mision} 
+              src={mision2} 
               alt="Studio Exterior" 
               className="rounded-xl shadow-lg"
             />
