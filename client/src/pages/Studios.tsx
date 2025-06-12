@@ -5,6 +5,8 @@ import mixing from "@assets/mixing.jpg";
 
 import arena3 from "@assets/arena3.jpg";
 
+import podcast3 from "@assets/podcast3.jpg";
+
 export default function Studios() {
   return (
     <div>
@@ -48,7 +50,7 @@ export default function Studios() {
           <div id="podcast" className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="lg:order-2">
               <img 
-                src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                src={podcast3} 
                 alt="Podcast Studio Setup" 
                 className="rounded-xl shadow-lg"
               />
