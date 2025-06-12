@@ -3,8 +3,9 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./ThemeToggle";
-import logoLight from "@assets/TEXtvStudios-logo-light_1749736870512.png";
-import logoDark from "@assets/TEXtvStudios-logo-dark_1749736870512.png";
+import logoLight from "@assets/TEXtvStudios-logo-light_1749737843578.png";
+import logoDark from "@assets/TEXtvStudios-logo-dark_1749737843577.png";
+import logoNeutral from "@assets/TEXtvStudios-logo-neutral_1749737843578.png";
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -34,12 +35,12 @@ export default function Navbar() {
                 <img 
                   src={logoLight} 
                   alt="TEXtv Studios" 
-                  className="h-8 dark:hidden"
+                  className="h-10 dark:hidden"
                 />
                 <img 
                   src={logoDark} 
                   alt="TEXtv Studios" 
-                  className="h-8 hidden dark:block"
+                  className="h-10 hidden dark:block"
                 />
               </div>
             </Link>
