@@ -18,8 +18,8 @@ export default function Gallery() {
       caption: "Podcast Studio"
     },
     {
-      src: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Studio Microphone",
+      src: "/equipment.jpg",
+      alt: "TEXtv Studios Professional Audio Equipment",
       caption: "Professional Equipment"
     },
     {
