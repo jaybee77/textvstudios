@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 
 import mixing from "@assets/mixing.jpg";
 
+import arena3 from "@assets/arena3.jpg";
+
 export default function Studios() {
   return (
     <div>
@@ -72,7 +74,7 @@ export default function Studios() {
           <div id="broadcast" className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1551731409-43eb3e517a1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                src={arena3} 
                 alt="Broadcast Control Room" 
                 className="rounded-xl shadow-lg"
               />
