@@ -65,17 +65,17 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone",
-      value: "XXX-XXX-XXXX"
+      value: "469-966-9286"
     },
     {
       icon: MapPin,
       title: "Address",
-      value: "[Placeholder Address]\nTexas, USA"
+      value: "Texas, USA"
     },
     {
       icon: Clock,
       title: "Hours",
-      value: "Mon–Sat, 9am–9pm"
+      value: "Mon–Sat, 8am–11pm"
     }
   ];
 
