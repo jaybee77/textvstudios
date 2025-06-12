@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "./ThemeToggle";
+
 import logoLight from "@assets/TEXtvStudios-logo-light_1749737843578.png";
 import logoDark from "@assets/TEXtvStudios-logo-dark_1749737843577.png";
 import logoNeutral from "@assets/TEXtvStudios-logo-neutral_1749737843578.png";
@@ -26,21 +26,16 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
+    <nav className="bg-gray-900 shadow-sm border-b border-gray-700 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/">
               <div className="cursor-pointer">
                 <img 
-                  src={logoLight} 
-                  alt="TEXtv Studios" 
-                  className="h-10 dark:hidden"
-                />
-                <img 
                   src={logoDark} 
                   alt="TEXtv Studios" 
-                  className="h-10 hidden dark:block"
+                  className="h-10"
                 />
               </div>
             </Link>
@@ -54,8 +49,8 @@ export default function Navbar() {
                   <span
                     className={`px-3 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer ${
                       isActive(item.path)
-                        ? "text-black dark:text-white"
-                        : "text-gray-600 dark:text-gray-300 hover:text-texas-red dark:hover:text-texas-red"
+                        ? "text-white"
+                        : "text-gray-300 hover:text-textv-cyan"
                     }`}
                   >
                     {item.label}
@@ -65,11 +60,8 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Desktop Theme Toggle and Mobile menu button */}
-          <div className="flex items-center space-x-4">
-            <div className="hidden md:block">
-              <ThemeToggle />
-            </div>
+          {/* Mobile menu button */}
+          <div className="flex items-center">
             <div className="md:hidden">
               <Button
                 variant="ghost"
@@ -100,11 +92,6 @@ export default function Navbar() {
                 </span>
               </Link>
             ))}
-            <div className="pt-2 border-t border-gray-200 dark:border-gray-700 mt-2">
-              <div className="px-3 py-2">
-                <ThemeToggle />
-              </div>
-            </div>
           </div>
         </div>
       )}
