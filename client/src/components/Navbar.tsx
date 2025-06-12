@@ -67,7 +67,7 @@ export default function Navbar() {
                 variant="ghost"
                 size="sm"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-600 dark:text-gray-300 hover:text-texas-red"
+                className="text-gray-300 hover:text-textv-cyan"
               >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </Button>
@@ -78,13 +78,13 @@ export default function Navbar() {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+        <div className="md:hidden bg-gray-900 border-t border-gray-700">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <Link key={item.path} href={item.path}>
                 <span
                   className={`block px-3 py-2 text-base font-medium cursor-pointer ${
-                    isActive(item.path) ? "text-black dark:text-white" : "text-gray-600 dark:text-gray-300"
+                    isActive(item.path) ? "text-white" : "text-gray-300"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
