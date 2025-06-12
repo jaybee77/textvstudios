@@ -46,14 +46,14 @@ export default function Gallery() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {galleryImages.map((image, index) => (
-            <Card key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <Card key={index} className="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <img 
                 src={image.src} 
                 alt={image.alt} 
                 className="w-full h-64 object-cover"
               />
-              <CardContent className="p-4">
-                <p className="text-gray-600">{image.caption}</p>
+              <CardContent className="p-6">
+                <p className="text-gray-900 dark:text-white font-medium">{image.caption}</p>
               </CardContent>
             </Card>
           ))}
