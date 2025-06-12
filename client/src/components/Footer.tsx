@@ -29,7 +29,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400 dark:text-gray-500">
               <li>info@textvstudios.com</li>
-              <li>XXX-XXX-XXXX</li>
+              <li>469-966-9286</li>
               <li>Mon–Sat, 9am–9pm</li>
             </ul>
           </div>
