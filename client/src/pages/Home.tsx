@@ -6,6 +6,8 @@ import control_room_thumb_2 from "@assets/control-room-thumb-2.jpg";
 
 import broadcast_thumb from "@assets/broadcast-thumb.jpg";
 
+import home_recording from "@assets/home-recording.jpg";
+
 export default function Home() {
   return (
     <div>
@@ -56,7 +58,7 @@ export default function Home() {
             {/* Recording Studio Card */}
             <Card className="bg-white dark:bg-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
               <img 
-                src={control_room_thumb_2} 
+                src={home_recording} 
                 alt="Recording Studio" 
                 className="w-full h-48 object-cover"
               />
