@@ -2,6 +2,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
+import control_room_thumb_2 from "@assets/control-room-thumb-2.jpg";
+
 export default function Home() {
   return (
     <div>
@@ -23,7 +25,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/* Intro Section */}
       <div className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -32,7 +33,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-
       {/* Studio Cards */}
       <div className="py-20 bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +42,7 @@ export default function Home() {
             {/* Recording Studio Card */}
             <Card className="bg-white dark:bg-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" 
+                src={control_room_thumb_2} 
                 alt="Recording Studio" 
                 className="w-full h-48 object-cover"
               />
