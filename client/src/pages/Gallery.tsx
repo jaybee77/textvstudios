@@ -23,8 +23,8 @@ export default function Gallery() {
       caption: "Professional Equipment"
     },
     {
-      src: "https://images.unsplash.com/photo-1551731409-43eb3e517a1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Broadcast Studio",
+      src: "/broadcast-control.jpg",
+      alt: "TEXtv Studios Broadcast Control Room",
       caption: "Broadcast Control"
     },
     {
