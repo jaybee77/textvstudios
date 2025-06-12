@@ -1,6 +1,8 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
+import mixing from "@assets/mixing.jpg";
+
 export default function Studios() {
   return (
     <div>
@@ -11,7 +13,6 @@ export default function Studios() {
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">Professional facilities equipped with cutting-edge technology for every type of production.</p>
         </div>
       </div>
-
       <div className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
           
@@ -19,7 +20,7 @@ export default function Studios() {
           <div id="recording" className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                src={mixing} 
                 alt="Recording Studio Interior" 
                 className="rounded-xl shadow-lg"
               />
