@@ -13,8 +13,8 @@ export default function Gallery() {
       caption: "Control Room"
     },
     {
-      src: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Podcast Recording",
+      src: "/podcast-room.jpg",
+      alt: "TEXtv Studios Podcast Room",
       caption: "Podcast Studio"
     },
     {
