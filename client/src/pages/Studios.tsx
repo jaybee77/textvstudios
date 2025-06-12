@@ -9,6 +9,8 @@ import podcast3 from "@assets/podcast3.jpg";
 
 import podcasters from "@assets/podcasters.jpg";
 
+import broadcast from "@assets/broadcast.jpg";
+
 export default function Studios() {
   return (
     <div>
@@ -78,7 +80,7 @@ export default function Studios() {
           <div id="broadcast" className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src={arena3} 
+                src={broadcast} 
                 alt="Broadcast Control Room" 
                 className="rounded-xl shadow-lg"
               />
