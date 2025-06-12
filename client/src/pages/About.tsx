@@ -1,5 +1,7 @@
 import { Award, Users, Building, DollarSign } from "lucide-react";
 
+import mision from "@assets/mision.jpg";
+
 export default function About() {
   const differentiators = [
     {
@@ -41,7 +43,7 @@ export default function About() {
           </div>
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              src={mision} 
               alt="Studio Exterior" 
               className="rounded-xl shadow-lg"
             />
