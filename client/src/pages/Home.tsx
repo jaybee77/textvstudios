@@ -31,11 +31,11 @@ export default function Home() {
             <p className="text-xl lg:text-2xl text-gray-200 dark:text-gray-300 mb-8 max-w-3xl mx-auto drop-shadow-md">
               Where Texas Talent Meets World-Class Technology
             </p>
-            <Link href="/booking">
+            <a href="https://studios.textv.com" target="_blank" rel="noopener noreferrer">
               <Button className="bg-textv-cyan text-black px-8 py-4 text-lg font-semibold hover:bg-textv-cyan/90 transition-colors drop-shadow-lg">
                 Book a Session
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
