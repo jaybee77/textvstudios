@@ -31,6 +31,16 @@ export default function Gallery() {
       src: "/live-session.jpg",
       alt: "TEXtv Studios Live Recording Session",
       caption: "Live Session"
+    },
+    {
+      src: "/arena2.jpg",
+      alt: "TEXtv Studios Recording Space",
+      caption: "Studio Space"
+    },
+    {
+      src: "/mixing.jpg",
+      alt: "TEXtv Studios Mixing Setup",
+      caption: "Mixing Console"
     }
   ];
 
