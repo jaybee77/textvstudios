@@ -1,0 +1,168 @@
+## 🚀 Replit Build Prompt
+
+We're building a **React website** for **TEXtv Studios**, a state-of-the-art recording facility featuring three distinct studio environments: a traditional recording studio, a podcast studio, and a broadcast control room. The site should showcase these offerings in a clean, professional layout using **Tailwind CSS** for styling.  
+
+The goal is to:
+- Clearly describe each studio type and pricing
+- Allow users to visit an external booking page
+- Display a media gallery (placeholders for now)
+- Provide company info and a contact form
+
+The design should emphasize **modern simplicity**, ease of navigation, and mobile responsiveness.
+
+---
+
+## 🌳 Component Tree Diagram
+
+```
+App
+├── Navbar
+├── Routes
+│   ├── Home
+│   │   ├── Hero
+│   │   ├── Intro
+│   │   └── StudioCards
+│   ├── Studios
+│   │   ├── StudiosHeader
+│   │   ├── RecordingStudio
+│   │   ├── PodcastStudio
+│   │   └── BroadcastStudio
+│   ├── Gallery
+│   │   └── GalleryGrid
+│   ├── Booking
+│   │   └── BookingEmbed
+│   ├── About
+│   │   ├── Mission
+│   │   └── Differentiators
+│   └── Contact
+│       ├── ContactForm
+│       └── ContactSidebar
+└── Footer
+```
+
+---
+
+## 🧭 Pages and Content
+
+### 1. `/` - **Home Page**
+
+**Hero**  
+_TEXtv Studios_  
+**Tagline:** “Where Texas Talent Meets World-Class Technology”  
+CTA: [Book a Session] → `/booking`
+
+**Intro**  
+> TEXtv Studios is a high-tech media production facility in the heart of Texas. Whether you're producing an album, launching a podcast, or streaming a live event, we provide the professional environment and technical expertise to make it happen.
+
+**StudioCards** (x3)
+- Recording Studio → `/studios#recording`
+- Podcast Studio → `/studios#podcast`
+- Broadcast Studio → `/studios#broadcast`
+
+---
+
+### 2. `/studios` - **Studios Overview Page**
+
+**StudiosHeader**
+> Studios Designed for Creators
+
+**🎙️ Recording Studio**
+> Our flagship audio suite features multiple isolation booths, a professionally tuned control room, and a live tracking space built for musical precision. Ideal for full-band sessions, vocal tracking, voiceovers, sound design, and more.
+
+- **Rate:** $100/hr + engineer fees
+- CTA: [Book Now] → `/booking`
+
+**🎧 Podcast Studio**
+> Accommodates up to six hosts or guests with individual mic/headphone stations, multi-cam coverage, and optional automated video switching triggered by audio input. Streamlined for quality and speed.
+
+- **Rate:** $100/hr + engineer fees  
+- CTA: [Book Now] → `/booking`
+
+**📡 Broadcast Studio**
+> Fully equipped for live or recorded event production. Operates like a TV truck—without the truck. Perfect for concerts, plays, conventions, or arena broadcasts when paired with our theater or arena space.
+
+- **Rate:** $100/hr + engineer fees  
+- CTA: [Book Now] → `/booking`
+
+---
+
+### 3. `/gallery` - **Gallery Page**
+
+**GalleryGrid**
+> A rotating collection of in-studio moments, behind-the-scenes shots, and equipment in action.  
+(Use placeholders like `/images/placeholder1.jpg` for now.)
+
+---
+
+### 4. `/booking` - **Booking Page**
+
+> Ready to create? Use our online booking system to reserve your studio time.  
+**CTA Button:**  
+```jsx
+<a href="@link.to.booking.page" target="_blank" rel="noopener noreferrer" className="btn-primary">
+  Book Your Session
+</a>
+```
+
+---
+
+### 5. `/about` - **About Page**
+
+**Mission Section**
+> TEXtv Studios was built to empower creators—from musicians to media producers—by providing access to industry-grade facilities in a welcoming, professional environment.
+
+**Differentiators**
+- Cutting-edge equipment
+- Expert engineers
+- Versatile multi-studio setups
+- Transparent pricing at $100/hr per studio
+
+---
+
+### 6. `/contact` - **Contact Page**
+
+**ContactForm**  
+- Name  
+- Email  
+- Message  
+- Submit Button → show toast on success  
+
+**ContactSidebar**
+- **Email:** info@textvstudios.com  
+- **Phone:** XXX-XXX-XXXX  
+- **Address:** [Placeholder Address]  
+- **Hours:** Mon–Sat, 9am–9pm  
+
+---
+
+## ⚙️ Routing (React Router v6+)
+
+```jsx
+<Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/studios" element={<Studios />} />
+  <Route path="/gallery" element={<Gallery />} />
+  <Route path="/booking" element={<Booking />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/contact" element={<Contact />} />
+</Routes>
+```
+
+---
+
+## ✅ Tailwind Setup Notes
+
+Make sure to install Tailwind using the official guide: https://tailwindcss.com/docs/guides/create-react-app  
+Use utility classes for spacing, layout, responsiveness, and hover states.
+
+Example button:
+
+```html
+<button className="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition">
+  Book a Session
+</button>
+```
+
+---
+
+Let me know if you want a dark theme toggle, sticky navbar, or animations (e.g. Framer Motion). This structure is good to go for Replit or local React builds.
