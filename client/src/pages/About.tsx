@@ -60,8 +60,8 @@ export default function About() {
               const IconComponent = item.icon;
               return (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 bg-texas-red rounded-full flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 bg-textv-cyan rounded-full flex items-center justify-center mx-auto mb-4">
+                    <IconComponent className="w-8 h-8 text-black" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.description}</p>

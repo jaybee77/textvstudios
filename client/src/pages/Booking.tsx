@@ -15,8 +15,8 @@ export default function Booking() {
         <div className="bg-gray-50 rounded-xl p-12">
           <div className="max-w-md mx-auto">
             <div className="text-center mb-8">
-              <div className="w-16 h-16 bg-texas-red rounded-full flex items-center justify-center mx-auto mb-4">
-                <Calendar className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 bg-textv-cyan rounded-full flex items-center justify-center mx-auto mb-4">
+                <Calendar className="w-8 h-8 text-black" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Online Booking System</h3>
               <p className="text-gray-600 mb-6">Schedule your session through our partner booking platform</p>
@@ -24,7 +24,7 @@ export default function Booking() {
             
             <Button 
               asChild 
-              className="bg-texas-red text-white px-8 py-4 text-lg font-semibold hover:bg-texas-red/90 transition-colors w-full"
+              className="bg-textv-cyan text-black px-8 py-4 text-lg font-semibold hover:bg-textv-cyan/90 transition-colors w-full"
             >
               <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                 Book Your Session
