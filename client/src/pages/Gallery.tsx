@@ -3,8 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function Gallery() {
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Recording Session",
+      src: "/recording-arena.jpg",
+      alt: "TEXtv Studios Recording Arena",
       caption: "Recording Session"
     },
     {
@@ -28,8 +28,8 @@ export default function Gallery() {
       caption: "Broadcast Control"
     },
     {
-      src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-      alt: "Live Recording",
+      src: "/live-session.jpg",
+      alt: "TEXtv Studios Live Recording Session",
       caption: "Live Session"
     }
   ];
