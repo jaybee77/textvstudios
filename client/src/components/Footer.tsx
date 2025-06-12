@@ -21,7 +21,7 @@ export default function Footer() {
               <li><Link href="/"><span className="hover:text-textv-cyan transition-colors cursor-pointer">Home</span></Link></li>
               <li><Link href="/studios"><span className="hover:text-textv-cyan transition-colors cursor-pointer">Studios</span></Link></li>
               <li><Link href="/gallery"><span className="hover:text-textv-cyan transition-colors cursor-pointer">Gallery</span></Link></li>
-              <li><Link href="/booking"><span className="hover:text-textv-cyan transition-colors cursor-pointer">Booking</span></Link></li>
+              <li><a href="https://studios.textv.com" target="_blank" rel="noopener noreferrer"><span className="hover:text-textv-cyan transition-colors cursor-pointer">Booking</span></a></li>
             </ul>
           </div>
           

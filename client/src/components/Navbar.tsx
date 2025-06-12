@@ -15,7 +15,7 @@ export default function Navbar() {
     { label: "Home", path: "/" },
     { label: "Studios", path: "/studios" },
     { label: "Gallery", path: "/gallery" },
-    { label: "Booking", path: "/booking" },
+    { label: "Booking", path: "/booking", external: true, url: "https://studios.textv.com" },
     { label: "About", path: "/about" },
     { label: "Contact", path: "/contact" },
   ];
@@ -45,17 +45,25 @@ export default function Navbar() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                <Link key={item.path} href={item.path}>
-                  <span
-                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer ${
-                      isActive(item.path)
-                        ? "text-white"
-                        : "text-gray-300 hover:text-textv-cyan"
-                    }`}
-                  >
-                    {item.label}
-                  </span>
-                </Link>
+                item.external ? (
+                  <a key={item.path} href={item.url} target="_blank" rel="noopener noreferrer">
+                    <span className="px-3 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer text-gray-300 hover:text-textv-cyan">
+                      {item.label}
+                    </span>
+                  </a>
+                ) : (
+                  <Link key={item.path} href={item.path}>
+                    <span
+                      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer ${
+                        isActive(item.path)
+                          ? "text-white"
+                          : "text-gray-300 hover:text-textv-cyan"
+                      }`}
+                    >
+                      {item.label}
+                    </span>
+                  </Link>
+                )
               ))}
             </div>
           </div>
@@ -81,16 +89,27 @@ export default function Navbar() {
         <div className="md:hidden bg-gray-900 border-t border-gray-700">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
-              <Link key={item.path} href={item.path}>
-                <span
-                  className={`block px-3 py-2 text-base font-medium cursor-pointer ${
-                    isActive(item.path) ? "text-white" : "text-gray-300"
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </span>
-              </Link>
+              item.external ? (
+                <a key={item.path} href={item.url} target="_blank" rel="noopener noreferrer">
+                  <span
+                    className="block px-3 py-2 text-base font-medium cursor-pointer text-gray-300"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </span>
+                </a>
+              ) : (
+                <Link key={item.path} href={item.path}>
+                  <span
+                    className={`block px-3 py-2 text-base font-medium cursor-pointer ${
+                      isActive(item.path) ? "text-white" : "text-gray-300"
+                    }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </span>
+                </Link>
+              )
             ))}
           </div>
         </div>
