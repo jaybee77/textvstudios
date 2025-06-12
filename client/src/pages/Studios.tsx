@@ -34,9 +34,9 @@ export default function Studios() {
               <p className="text-lg text-gray-700 mb-6">
                 Our flagship audio suite features multiple isolation booths, a professionally tuned control room, and a live tracking space built for musical precision. Ideal for full-band sessions, vocal tracking, voiceovers, sound design, and more.
               </p>
-              <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <div className="p-6 rounded-lg mb-6" style={{backgroundColor: '#1a1a1a'}}>
                 <p className="text-2xl font-bold text-texas-red mb-2">$100/hr + engineer fees</p>
-                <p className="text-gray-600">Professional engineering services available</p>
+                <p className="text-gray-300">Professional engineering services available</p>
               </div>
               <Link href="/booking">
                 <Button className="bg-black text-white px-8 py-3 font-semibold hover:bg-gray-800 transition-colors">
@@ -60,9 +60,9 @@ export default function Studios() {
               <p className="text-lg text-gray-700 mb-6">
                 Accommodates up to six hosts or guests with individual mic/headphone stations, multi-cam coverage, and optional automated video switching triggered by audio input. Streamlined for quality and speed.
               </p>
-              <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <div className="p-6 rounded-lg mb-6" style={{backgroundColor: '#1a1a1a'}}>
                 <p className="text-2xl font-bold text-texas-red mb-2">$100/hr + engineer fees</p>
-                <p className="text-gray-600">Video and audio production included</p>
+                <p className="text-gray-300">Video and audio production included</p>
               </div>
               <Link href="/booking">
                 <Button className="bg-black text-white px-8 py-3 font-semibold hover:bg-gray-800 transition-colors">
@@ -86,9 +86,9 @@ export default function Studios() {
               <p className="text-lg text-gray-700 mb-6">
                 Fully equipped for live or recorded event production. Operates like a TV truck—without the truck. Perfect for concerts, plays, conventions, or arena broadcasts when paired with our theater or arena space.
               </p>
-              <div className="bg-gray-50 p-6 rounded-lg mb-6">
+              <div className="p-6 rounded-lg mb-6" style={{backgroundColor: '#1a1a1a'}}>
                 <p className="text-2xl font-bold text-texas-red mb-2">$100/hr + engineer fees</p>
-                <p className="text-gray-600">Live streaming and recording capabilities</p>
+                <p className="text-gray-300">Live streaming and recording capabilities</p>
               </div>
               <Link href="/booking">
                 <Button className="bg-black text-white px-8 py-3 font-semibold hover:bg-gray-800 transition-colors">
