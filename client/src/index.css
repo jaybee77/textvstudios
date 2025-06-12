@@ -24,6 +24,8 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
   --texas-red: hsl(0, 76%, 47%);
+  --textv-cyan: hsl(180, 100%, 50%);
+  --textv-cyan-dark: hsl(180, 100%, 45%);
 }
 
 .dark {
@@ -83,5 +85,25 @@
   
   .focus\:ring-texas-red:focus {
     --tw-ring-color: var(--texas-red);
+  }
+
+  .textv-cyan {
+    color: var(--textv-cyan);
+  }
+  
+  .bg-textv-cyan {
+    background-color: var(--textv-cyan);
+  }
+  
+  .border-textv-cyan {
+    border-color: var(--textv-cyan);
+  }
+  
+  .hover\:bg-textv-cyan:hover {
+    background-color: var(--textv-cyan-dark);
+  }
+  
+  .hover\:text-textv-cyan:hover {
+    color: var(--textv-cyan);
   }
 }
