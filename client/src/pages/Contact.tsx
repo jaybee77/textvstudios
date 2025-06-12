@@ -70,7 +70,7 @@ export default function Contact() {
     {
       icon: MapPin,
       title: "Address",
-      value: "Texas, USA"
+      value: "680 Innovation Blvd.\nForney, TX 75126"
     },
     {
       icon: Clock,
