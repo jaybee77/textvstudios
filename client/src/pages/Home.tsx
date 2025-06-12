@@ -4,6 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 
 import control_room_thumb_2 from "@assets/control-room-thumb-2.jpg";
 
+import broadcast_thumb from "@assets/broadcast-thumb.jpg";
+
 export default function Home() {
   return (
     <div>
@@ -78,7 +80,7 @@ export default function Home() {
             {/* Broadcast Studio Card */}
             <Card className="bg-white dark:bg-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1551731409-43eb3e517a1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" 
+                src={broadcast_thumb} 
                 alt="Broadcast Studio" 
                 className="w-full h-48 object-cover"
               />
