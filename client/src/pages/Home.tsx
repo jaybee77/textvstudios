@@ -17,7 +17,7 @@ export default function Home() {
           muted 
           loop 
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/bg-video.mp4" type="video/mp4" />
         </video>
@@ -38,9 +38,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        
-        {/* Dark Overlay for Better Text Readability */}
-        <div className="absolute inset-0 bg-black/30"></div>
       </div>
       {/* Intro Section */}
       <div className="py-20 bg-gray-50 dark:bg-gray-900">
