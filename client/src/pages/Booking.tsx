@@ -1,5 +1,4 @@
-import { Calendar, ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Calendar } from "lucide-react";
 
 export default function Booking() {
   const bookingUrl = "https://studios.textv.com";
@@ -13,19 +12,7 @@ export default function Booking() {
             Schedule your studio time directly through our booking system below.
           </p>
           
-          {/* Fallback link for browsers that don't support iframe */}
-          <div className="mb-4">
-            <Button 
-              asChild 
-              variant="outline"
-              className="inline-flex items-center gap-2"
-            >
-              <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
-                Open in New Tab
-                <ExternalLink className="w-4 h-4" />
-              </a>
-            </Button>
-          </div>
+          
         </div>
 
         {/* Embedded booking system */}

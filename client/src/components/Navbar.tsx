@@ -15,7 +15,7 @@ export default function Navbar() {
     { label: "Home", path: "/" },
     { label: "Studios", path: "/studios" },
     { label: "Gallery", path: "/gallery" },
-    { label: "Booking", path: "/booking", external: true, url: "https://studios.textv.com" },
+    { label: "Booking", path: "/booking" },
     { label: "About", path: "/about" },
     { label: "Contact", path: "/contact" },
   ];
