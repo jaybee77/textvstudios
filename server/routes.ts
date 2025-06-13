@@ -18,10 +18,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       // Send email notification using Resend
       await resend.emails.send({
-        from: "TEXtv Studios <onboarding@resend.dev>",
-        to: ["delivered@resend.dev"],
+        from: "TEXtv Studios <info@studios.textv.com>",
+        to: ["randylcline@icloud.com", "jb@textv.com"],
         replyTo: [validatedData.email],
-        subject: `New Contact Form Message from ${validatedData.name}`,
+        subject: `Studio inquiry message from ${validatedData.name}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <h2 style="color: #1a1a1a; border-bottom: 2px solid #00bcd4; padding-bottom: 10px;">
