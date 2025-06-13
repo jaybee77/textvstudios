@@ -20,7 +20,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       await resend.emails.send({
         from: "TEXtv Studios <onboarding@resend.dev>",
         to: ["delivered@resend.dev"],
-        reply_to: [validatedData.email],
+        replyTo: [validatedData.email],
         subject: `New Contact Form Message from ${validatedData.name}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -31,6 +31,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
             <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
               <p><strong>Name:</strong> ${validatedData.name}</p>
               <p><strong>Email:</strong> ${validatedData.email}</p>
+              ${validatedData.phone ? `<p><strong>Phone:</strong> ${validatedData.phone}</p>` : ''}
+              ${validatedData.requestCallback ? '<p><strong>Callback Requested:</strong> <span style="color: #00bcd4; font-weight: bold;">YES</span></p>' : ''}
               <p><strong>Message:</strong></p>
               <div style="background-color: white; padding: 15px; border-radius: 4px; margin-top: 10px;">
                 ${validatedData.message.replace(/\n/g, '<br>')}
@@ -46,7 +48,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 New Contact Form Submission
 
 Name: ${validatedData.name}
-Email: ${validatedData.email}
+Email: ${validatedData.email}${validatedData.phone ? `\nPhone: ${validatedData.phone}` : ''}${validatedData.requestCallback ? '\nCallback Requested: YES' : ''}
 
 Message:
 ${validatedData.message}

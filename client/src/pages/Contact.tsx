@@ -7,6 +7,7 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
@@ -14,7 +15,9 @@ import { apiRequest } from "@/lib/queryClient";
 const contactSchema = z.object({
   name: z.string().min(1, "Name is required"),
   email: z.string().email("Please enter a valid email address"),
+  phone: z.string().optional(),
   message: z.string().min(10, "Message must be at least 10 characters long"),
+  requestCallback: z.boolean().default(false),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
@@ -27,7 +30,9 @@ export default function Contact() {
     defaultValues: {
       name: "",
       email: "",
+      phone: "",
       message: "",
+      requestCallback: false,
     },
   });
 
