@@ -23,7 +23,7 @@ export default function Studios() {
       </div>
       <div className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
-          
+
           {/* Recording Studio */}
           <div id="recording" className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -36,11 +36,11 @@ export default function Studios() {
             <div>
               <h2 className="text-3xl font-bold mb-6">🎙️ Recording Studio</h2>
               <p className="text-lg text-gray-700 mb-6">
-                Our flagship audio suite features multiple isolation booths, a professionally tuned control room, and a live tracking space built for musical precision. Ideal for full-band sessions, vocal tracking, voiceovers, sound design, and more.
+                Our flagship audio suite features multiple isolation booths, a professionally designed control room, and a live tracking space built for musical precision. Ideal for full-band sessions, vocal tracking, voiceovers, sound design, and more.
               </p>
               <div className="p-6 rounded-lg mb-6" style={{backgroundColor: '#1a1a1a'}}>
-                <p className="text-2xl font-bold text-textv-cyan mb-2">$100/hr + engineer fees</p>
-                <p className="text-gray-300">Professional engineering services available</p>
+                <p className="text-2xl font-bold text-textv-cyan mb-1">$100/hr studio rental</p>
+                <p className="text-lg text-gray-700 mb-1"> Professional engineering services available for an extra $25 - $50/hr</p>
               </div>
               <Link href="/booking">
                 <Button className="bg-textv-cyan text-black px-8 py-3 font-semibold hover:bg-textv-cyan/90 transition-colors">
@@ -65,8 +65,8 @@ export default function Studios() {
                 Accommodates up to six hosts or guests with individual mic/headphone stations, multi-cam coverage, and optional automated video switching triggered by audio input. Streamlined for quality and speed.
               </p>
               <div className="p-6 rounded-lg mb-6" style={{backgroundColor: '#1a1a1a'}}>
-                <p className="text-2xl font-bold text-textv-cyan mb-2">$100/hr + engineer fees</p>
-                <p className="text-gray-300">Video and audio production included</p>
+                <p className="text-2xl font-bold text-textv-cyan mb-1">$100/hr studio rental</p>
+                <p className="text-lg text-gray-700 mb-1"> Professional engineering services available for an extra $25 - $50/hr</p>
               </div>
               <Link href="/booking">
                 <Button className="bg-textv-cyan text-black px-8 py-3 font-semibold hover:bg-textv-cyan/90 transition-colors">
@@ -91,8 +91,8 @@ export default function Studios() {
                 Fully equipped for live or recorded event production. Operates like a TV truck—without the truck. Perfect for concerts, plays, conventions, or arena broadcasts when paired with our theater or arena space.
               </p>
               <div className="p-6 rounded-lg mb-6" style={{backgroundColor: '#1a1a1a'}}>
-                <p className="text-2xl font-bold text-textv-cyan mb-2">$100/hr + engineer fees</p>
-                <p className="text-gray-300">Live streaming and recording capabilities</p>
+                <p className="text-2xl font-bold text-textv-cyan mb-1">$100/hr studio rental</p>
+                <p className="text-lg text-gray-700 mb-1"> Professional engineering services available for an extra $25 - $50/hr</p>
               </div>
               <Link href="/booking">
                 <Button className="bg-textv-cyan text-black px-8 py-3 font-semibold hover:bg-textv-cyan/90 transition-colors">

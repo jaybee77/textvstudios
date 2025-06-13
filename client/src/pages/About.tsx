@@ -24,7 +24,7 @@ export default function About() {
     {
       icon: DollarSign,
       title: "Transparent Pricing",
-      description: "Clear $100/hr rate for all studios with no hidden fees"
+      description: "Clear $100/hr rate for all studio rentals"
     }
   ];
 
